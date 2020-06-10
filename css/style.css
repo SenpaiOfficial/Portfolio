@@ -1,12 +1,19 @@
 .container {
   width: 85%;
+  max-width: 1403px;
   margin: auto; }
 
 img {
   max-width: 100%; }
 
+button {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer; }
+
 .header {
-  padding: 2.1rem 0; }
+  padding: 1rem 0; }
 
 .menu {
   display: flex;
@@ -17,8 +24,10 @@ img {
   max-width: 10rem; }
 
 .nav__item {
-  font-family: "Open Sans - Semibold", cursive;
+  font-family: 'Noto Sans', cursive;
+  font-weight: 400;
   margin-right: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: black; }
@@ -26,9 +35,50 @@ img {
 .phone {
   color: black; }
 
+.hero {
+  height: 100vh;
+  background: #000000 url(../img/hero-bg.jpg) no-repeat center/cover; }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 182px; }
+  .hero__button {
+    padding: 28px 35px;
+    margin-right: 2rem; }
+  .hero__title {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1.8rem; }
+  .hero__text {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0; }
+  .hero__button {
+    color: #ffffff; }
+    .hero__button--bg {
+      background: none;
+      border: 3px solid #f8f8f8; }
+    .hero__button--grey {
+      background-color: #00897b;
+      padding: 28px 46px;
+      color: #ffffff; }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 108px; }
+
 *, :after, :before {
   box-sizing: border-box; }
 
 body {
-  font-family: sans-serif;
-  font-size: 14px; }
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  margin: 0; }
