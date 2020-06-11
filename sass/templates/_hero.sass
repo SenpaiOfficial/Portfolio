@@ -6,34 +6,46 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  padding-top: 182px
+  padding-top: 10rem
  &__button
   padding: 28px 35px
   margin-right: 2rem
  &__title
   text-transform: uppercase
-  color: #ffffff
-  font-size: 60px
+  color: $light
+  font-size: 4.28rem
+  font-family: 'Futura Demi', cursive
   font-weight: 400
   margin-top: 0
   margin-bottom: 1.8rem
+  text-align: center
  &__text
   text-transform: uppercase
-  color: #ffffff
-  font-size: 22px
+  color: $light
+  font-size: 1.57rem
   font-weight: 700
+  text-align: center
   margin: 0
  &__button
   text-transform:
-  color: #ffffff
+  color: $light
   &--bg
    background: none
-   border: 3px solid #f8f8f8
+   border: 2px solid #f8f8f8
+   box-shadow: 0 5px 15px rgba(227,184,115,.2)
+   transition: box-shadow .3s
+   &:hover
+      box-shadow: none
   &--grey
-   background-color: $grey
+   background: none
+   border: 2px solid #f8f8f8
    padding: 28px 46px
    color: $light
+   box-shadow: 0 5px 15px rgba(227,184,115,.2)
+   transition: box-shadow .3s
+   &:hover
+      box-shadow: none
 .buttons
  display: flex
  flex-direction: row
- margin-top: 108px
+ margin-top: 7.7rem
