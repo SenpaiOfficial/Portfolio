@@ -26,37 +26,6 @@ button {
   font-weight: 700;
   cursor: pointer; }
 
-@media screen and (max-width: 1250px) {
-  html {
-    font-size: 14px; } }
-
-@media screen and (max-width: 992px) {
-  .nav {
-    display: none; } }
-
-@media screen and (max-width: 760px) {
-  nav {
-    font-size: 0.3rem; }
-  .hero__title {
-    font-size: 1rem;
-    text-align: none; }
-  .hero__text {
-    text-align: none; }
-  .row {
-    flex-direction: column; }
-  .about__us {
-    margin-bottom: 1rem; } }
-
-@media screen and (max-width: 570px) {
-  .hero__content {
-    padding-top: 7rem; }
-  .hero__title {
-    font-size: 1rem; }
-  .hero__text {
-    font-size: 0.3rem; }
-  .buttons {
-    padding-bottom: 7rem; } }
-
 .header {
   padding: 1rem 0; }
 
@@ -80,9 +49,71 @@ button {
 .phone {
   color: #212121; }
 
+.services {
+  padding: 5rem 0;
+  background-color: #e4fdf9; }
+  .services__icon {
+    margin-left: 1rem; }
+  .services__heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 620px;
+    margin: auto; }
+  .services__title {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .services__text {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0; }
+  .services__work {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; }
+  .services__row {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    padding: 3rem 0;
+    flex-basis: 370px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    transition: box-shadow, background-color .3s; }
+    .services__row:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+      background-color: #00897b;
+      color: #ffffff; }
+    .services__row__title {
+      font-size: 1.2rem; }
+    .services__row__text {
+      max-width: 90%;
+      font-size: 1rem;
+      text-align: center; }
+  .services__button {
+    max-width: 90%;
+    border: 2px solid #212121;
+    background: none;
+    padding: 1rem 1rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+    transition: border-color, color, box-shadow .3s; }
+    .services__button:hover {
+      color: #ffffff;
+      border-color: #ffffff;
+      box-shadow: 0 10px 20px rgba(131, 89, 89, 0.35); }
+
 .hero {
-  height: 100vh;
-  background: #000000 url(../img/hero-bg.jpg) no-repeat center/cover; }
+  height: 80vh;
+  background: #000000 url(../img/hero-bg.jpg) no-repeat center/cover;
+  padding-bottom: 40rem; }
   .hero__content {
     display: flex;
     flex-direction: column;
@@ -109,7 +140,8 @@ button {
     text-align: center;
     margin: 0; }
   .hero__button {
-    color: #ffffff; }
+    color: #ffffff;
+    max-width: 50%; }
     .hero__button--bg {
       background: none;
       border: 2px solid #f8f8f8;
@@ -134,6 +166,8 @@ button {
 
 .about {
   padding: 5rem 0; }
+  .about__me {
+    width: 20%; }
   .about__heading {
     display: flex;
     flex-direction: column;
@@ -142,7 +176,8 @@ button {
   .about__title {
     font-size: 2.1rem;
     text-align: center;
-    font-weight: 700; }
+    font-weight: 700;
+    text-transform: uppercase; }
   .about__text {
     font-size: 1.075rem;
     text-align: center;
@@ -169,6 +204,45 @@ button {
   align-items: center;
   margin-top: 121px;
   margin-left: 3rem; }
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 14px; } }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .services__row {
+    font-size: 0.8rem; }
+  .services__button {
+    padding: 0.7rem 0.7rem; }
+  .services .about__me {
+    width: 50%; } }
+
+@media screen and (max-width: 760px) {
+  nav {
+    font-size: 0.3rem; }
+  .hero__title {
+    font-size: 3rem;
+    text-align: none; }
+  .hero__text {
+    text-align: none; }
+  .row {
+    flex-direction: column; }
+    .row__us {
+      margin-bottom: 1rem; }
+  .about__me {
+    width: 30%; }
+  .services__work {
+    flex-direction: column; }
+  .services__row {
+    margin-bottom: 2rem; } }
+
+@media screen and (max-width: 570px) {
+  .buttons {
+    padding-bottom: 7rem; }
+  .about__me {
+    width: 50%; } }
 
 *, :after, :before {
   box-sizing: border-box; }

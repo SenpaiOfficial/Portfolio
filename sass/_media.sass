@@ -4,30 +4,42 @@
 @media screen and ( max-width: 992px )
   .nav
     display: none
+  .services
+    &__row
+      font-size: 0.8rem
+    &__button
+      padding: 0.7rem 0.7rem
+    .about
+      &__me
+        width: 50%
+
 @media screen and ( max-width: 760px )
   nav
     font-size: 0.3rem
   .hero
     &__title
-      font-size: 1rem
+      font-size: 3rem
       text-align: none
     &__text
       text-align: none
     &__content
   .row
     flex-direction: column
-  .about
     &__us
       margin-bottom: 1rem
+  .about
+    &__me
+      width: 30%
+  .services
+    &__work
+      flex-direction: column
+    &__row
+      margin-bottom: 2rem
 @media screen and ( max-width: 570px )
-  .hero
-    &__content
-      padding-top: 7rem
-    &__title
-      font-size: 1rem
-    &__text
-      font-size: 0.3rem
   .buttons
     padding-bottom: 7rem
+  .about
+    &__me
+      width: 50%
 
 
