@@ -52,8 +52,6 @@ button {
 .services {
   padding: 5rem 0;
   background-color: #e4fdf9; }
-  .services__icon {
-    margin-left: 1rem; }
   .services__heading {
     display: flex;
     justify-content: center;
