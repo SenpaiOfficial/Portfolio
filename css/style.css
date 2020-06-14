@@ -30,7 +30,7 @@ button {
   cursor: pointer; }
 
 .header {
-  padding: 1rem 0; }
+  padding: 0.5rem 0; }
 
 .menu {
   display: flex;
@@ -47,10 +47,19 @@ button {
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black; }
+  transition: .3s;
+  color: #212121; }
+  .nav__item:hover {
+    color: #e3b873;
+    font-size: 1.1rem; }
 
 .phone {
-  color: #212121; }
+  color: #212121;
+  font-size: 1rem;
+  transition: .3s; }
+  .phone:hover {
+    color: #e3b873;
+    font-size: 1.025rem; }
 
 .services {
   padding: 5rem 0;
@@ -121,7 +130,7 @@ button {
       transform: translateY(-7px); }
 
 .hero {
-  height: 80vh;
+  height: 90vh;
   background: #000000 url(../img/hero-bg.jpg) no-repeat center/cover;
   padding-bottom: 40rem; }
   .hero__content {
@@ -267,14 +276,17 @@ button {
 .works__card {
   margin-right: 2rem;
   margin-top: 2rem;
-  max-width: 26.4rem;
-  max-height: 26.4rem;
+  max-width: 20rem;
+  max-height: 20rem;
   transition: .3s; }
   .works__card:hover {
     transform: translateY(-15px); }
 
 .works__icon {
-  border-radius: 15px; }
+  border-radius: 15px;
+  max-width: 20rem;
+  min-height: 20rem;
+  max-height: 20rem; }
 
 @media screen and (max-width: 1250px) {
   html {
