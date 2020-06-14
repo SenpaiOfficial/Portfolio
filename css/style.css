@@ -17,6 +17,9 @@
   max-width: 1403px;
   margin: auto; }
 
+.section {
+  padding: 7rem 0; }
+
 img {
   max-width: 100%; }
 
@@ -57,7 +60,7 @@ button {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 620px;
+    max-width: 44.2rem;
     margin: auto; }
   .services__title {
     text-align: center;
@@ -217,6 +220,61 @@ button {
   align-items: center;
   margin-top: 121px;
   margin-left: 3rem; }
+
+.works__heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.works__title {
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.works__buttons {
+  margin-top: 2rem; }
+
+.works__button {
+  padding: 20px 35px;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  outline: none;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-size: 11px;
+  font-family: 'Futura Demi', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: .3s; }
+  .works__button:hover {
+    font-size: 0.8rem;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px); }
+
+.works__row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-wrap: wrap; }
+
+.works__card {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  max-width: 26.4rem;
+  max-height: 26.4rem;
+  transition: .3s; }
+  .works__card:hover {
+    transform: translateY(-15px); }
+
+.works__icon {
+  border-radius: 15px; }
 
 @media screen and (max-width: 1250px) {
   html {
