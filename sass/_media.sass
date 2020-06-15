@@ -12,7 +12,17 @@
     .about
       &__me
         width: 50%
-
+  .contacts
+    &__icons
+      display: flex
+      flex-direction: column
+    &__form
+      display: flex
+      flex-direction: column
+      margin-left: 15rem
+  .input
+    &__group
+      margin-bottom: 1rem
 @media screen and ( max-width: 760px )
   nav
     font-size: 0.3rem
@@ -35,6 +45,11 @@
       flex-direction: column
     &__row
       margin-bottom: 2rem
+  .contacts
+    &__form
+      display: flex
+      flex-direction: column
+      margin-left: 0
 @media screen and ( max-width: 570px )
   .buttons
     padding-bottom: 7rem

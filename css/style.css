@@ -29,6 +29,18 @@ button {
   font-weight: 700;
   cursor: pointer; }
 
+input {
+  width: 270px;
+  height: 4rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-family: 'Futura Book', cursive; }
+  input:focus {
+    outline: none; }
+
 .header {
   padding: 0.5rem 0; }
 
@@ -288,6 +300,48 @@ button {
   min-height: 20rem;
   max-height: 20rem; }
 
+.contacts {
+  background: url(../img/contacts/contacts-bg.jpg) no-repeat center/cover;
+  color: #ffffff; }
+  .contacts__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contacts__title {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .contacts__text {
+    font-size: 1rem; }
+  .contacts__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 4rem; }
+  .contacts__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .contacts__icon__text {
+      font-size: 1.2rem;
+      padding-top: 0.5rem; }
+  .contacts__form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 35.6rem;
+    margin: auto;
+    margin-top: 3rem; }
+  .contacts__input--full {
+    height: 14rem;
+    padding-right: 75%; }
+
+.input__group {
+  margin-right: 1rem; }
+
 @media screen and (max-width: 1250px) {
   html {
     font-size: 14px; } }
@@ -300,7 +354,16 @@ button {
   .services__button {
     padding: 0.7rem 0.7rem; }
   .services .about__me {
-    width: 50%; } }
+    width: 50%; }
+  .contacts__icons {
+    display: flex;
+    flex-direction: column; }
+  .contacts__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15rem; }
+  .input__group {
+    margin-bottom: 1rem; } }
 
 @media screen and (max-width: 760px) {
   nav {
@@ -319,7 +382,11 @@ button {
   .services__work {
     flex-direction: column; }
   .services__row {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .contacts__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
   .buttons {
