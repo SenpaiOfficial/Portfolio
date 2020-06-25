@@ -352,7 +352,8 @@ input {
   .services__row {
     font-size: 0.8rem; }
   .services__button {
-    padding: 0.7rem 0.7rem; }
+    padding: 1rem 1rem;
+    font-size: 0.8rem; }
   .services .about__me {
     width: 50%; }
   .contacts__icons {
@@ -363,7 +364,9 @@ input {
     flex-direction: column;
     margin-left: 15rem; }
   .input__group {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .buttons {
+    margin-top: 4rem; } }
 
 @media screen and (max-width: 760px) {
   nav {
@@ -390,9 +393,23 @@ input {
 
 @media screen and (max-width: 570px) {
   .buttons {
-    padding-bottom: 7rem; }
+    padding-bottom: 7rem;
+    margin-top: 4rem; }
   .about__me {
-    width: 50%; } }
+    width: 50%; }
+  .hero__content {
+    padding-top: 3rem; }
+  .works__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .works__card {
+    margin-right: 0; }
+  .services__row {
+    margin-right: 0; }
+  .contacts__text {
+    text-align: center; } }
 
 *, :after, :before {
   box-sizing: border-box; }
