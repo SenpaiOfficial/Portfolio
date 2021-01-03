@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Айдос Макеев - Веб-разработчик и Дизайнер в одном виде</title>
+ <title>FriendMoon - Веб-разработчик и Графический Дизайнер в одном виде</title>
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
  <link rel="stylesheet" href="css/style.css">
@@ -14,12 +14,11 @@
    <div class="menu">
     <div class="logo menu__logo"><img src="img/logo.png" width="60%" height="60%" alt="logo"></div>
     <nav class="nav">
-     <a href="#" class="nav__item">Главная</a>
-     <a href="#" class="nav__item">Обо мне</a>
-     <a href="#" class="nav__item">Услуги</a>
-     <a href="#" class="nav__item">Портфолио</a>
-     <a href="" class="nav__item">Блог</a>
-     <a href="" class="nav__item">Контакты</a>
+     <a href="#hero" class="nav__item">Главная</a>
+     <a href="#about" class="nav__item">Обо мне</a>
+     <a href="#service" class="nav__item">Услуги</a>
+     <a href="#work" class="nav__item">Портфолио</a>
+     <a href="#contact" class="nav__item">Контакты</a>
     </nav>
     <div class="menu__contacts">
      <a href="tel:+77083305993" class="phone">+7 (708) 330-59-93</a>
@@ -31,11 +30,11 @@
  </div>
  <!-- /.header -->
  <main>
-  <section class="hero">
+  <section id="hero" class="hero">
    <div class="container">
     <div class="hero__content">
-     <h1 class="hero__title">Волк одиночка по веб-разработке и дизайну</h1>
-     <p class="hero__text">Я хочу создать отряд, в котором будет состоять Тони Старк</p>
+     <h1 class="hero__title">Волк одиночка по графическому дизайну</h1>
+     <p class="hero__text">В этом блоге создается отряд будущих графических верховных магов!</p>
      <div class="buttons">
       <button class="button hero__button hero__button--bg">Связаться со мной</button>
      </div>
@@ -46,13 +45,14 @@
    <!-- /.container -->
   </section>
   <!-- /.hero -->
-  <section class="section about">
+  <section id="about" class="section about">
    <div class="container">
     <div class="about__heading">
-     <img src="img/about/me.png" alt="" class="about__me">
+     <img src="img/about/Fmoon.jpg" alt="" class="about__me">
      <h2 class="about__title">Айдос Макеев</h2>
      <p class="about__text">Закончил курс по веб-разработке у "Glo Academy"
       <br>Максимально выжимаю из себя сок ради вас, чтоб оно не было приторным!
+      <br>Создаю максимально качественные обложки для блогеров.
      </p>
     </div>
     <!-- /.about__heading -->
@@ -66,13 +66,13 @@
      <div class="about__us">
       <img src="img/about/transfer.svg" alt="transfer" class="about__icon">
       <p class="about__icon__title">Мотивирующий собеседник</p>
-      <p class="about__icon__text">Могу сделать так, чтоб твой родной сын сказал: "Я люблю тебя, папа и...папа!"</p>
+      <p class="about__icon__text">После беседы со мной у вас останется лишь один вопрос - "Почему он такой крутой?"</p>
      </div>
      <!-- /.about__us -->
      <div class="about__us">
       <img src="img/about/head.svg" alt="head" class="about__icon">
       <p class="about__icon__title">Нестандартное мышление</p>
-      <p class="about__icon__text">Знаете такого персонажа как Рик из "Рик и Морти"? <br>Так вот, я прототип Рика Санчеза.</p>
+      <p class="about__icon__text">Знаете такого персонажа Рика из мультфильма "Рик и Морти"? <br>Я прототип Рика Санчеза.</p>
      </div>
      <!-- /.about__us -->
     </div>
@@ -81,36 +81,34 @@
    <!-- /.container -->
   </section>
   <!-- /.section about -->
-  <section class="section services">
+  <section id="service" class="section services">
    <div class="container">
     <div class="services__menu">
      <div class="services__heading">
       <h2 class="services__title">Мои услуги</h2>
-      <p class="services__text">Деньги - это лишь край удовольствия</p>
+      <p class="services__text">Деньги - это лишь край удовольствия, однако за них я сделаю надлежащую работу</p>
      </div>
      <!-- /.services__heading -->
      <div class="services__work">
       <div class="services__row">
        <img src="img/services/web-design.png" alt="" class="services__icon">
        <h4 class="services__row__title">Веб-Дизайн</h4>
-       <p class="services__row__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus voluptate debitis? Optio, sed. Consectetur adipisci voluptate nemo itaque?
-       Sapiente qui laudantium quae odit hic quidem id corrupti tenetur dignissimos.</p>
+       <p class="services__row__text">Оформлю интернет-проект так, чтобы как можно больше пользователей им заинтересовалось.</p>
        <button class="button services__button">Читать больше</button>
       </div>
       <!-- /.services__row -->
       <div class="services__row">
        <img src="img/services/web-portfolio.png" alt="" class="services__icon">
        <h4 class="services__row__title">Портфолио</h4>
-       <p class="services__row__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus voluptate debitis? Optio, sed. Consectetur adipisci voluptate nemo itaque?
-       Sapiente qui laudantium quae odit hic quidem id corrupti tenetur dignissimos.</p>
-       <button class="button services__button">Читать больше</button>
+       <p class="services__row__text">Можете увидеть все мои качественные работы для заказчиков!</p>
+       <button class="button services__button">Посмотреть</button>
       </div>
       <!-- /.services__row -->
       <div class="services__row">
-       <img src="img/services/web-dev.png" alt="" class="services__icon">
-       <h4 class="services__row__title">Веб-Разработка</h4>
-       <p class="services__row__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus voluptate debitis? Optio, sed. Consectetur adipisci voluptate nemo itaque?
-       Sapiente qui laudantium quae odit hic quidem id corrupti tenetur dignissimos.</p>
+       <img src="img/services/yt1.png" alt="" class="services__icon">
+       <h4 class="services__row__title">Обложка YouTube</h4>
+       <p class="services__row__text">Превью - изображение на твоих роликах, а они крайне важны в продвижении видео.
+       </p>
        <button class="button services__button">Читать больше</button>
       </div>
       <!-- /.services__row -->
@@ -122,14 +120,14 @@
    <!-- /.container -->
   </section>
   <!-- /.section services -->
-  <section class="section works">
+  <section id="work" class="section works">
    <div class="container">
     <div class="works__heading">
      <h2 class="works__title">Последние работы</h2>
      <div class="works__buttons">
       <button class="works__button">Все</button>
-      <button class="works__button">Веб-дизайн</button>
-      <button class="works__button">Веб-разработка</button>
+      <button class="works__button">Оформление YouTube</button>
+      <button class="works__button">Обложки YouTube</button>
      </div>
      <!-- /.works__buttons -->
     </div>
@@ -165,7 +163,7 @@
    <!-- /.container -->
   </section>
   <!-- /.section works -->
-  <section class="section contacts section__contacts">
+  <section id="contact" class="section contacts section__contacts">
    <div class="container">
     <div class="contacts__heading">
      <h2 class="contacts__title">Контакты</h2>
@@ -180,18 +178,19 @@
      <!-- /.contacts__icon -->
      <div class="contacts__icon">
       <img src="img/contacts/phone.svg" alt="phone" class="contacts__image">
-      <p class="contacts__icon__text">+7 708-330-59-93
+      <a href="tel:+7 776-226-51-32/+7 708-330-59-93" class="contacts__icon__text">+7 708-330-59-93
        <br>+7 776-226-51-32
-      </p>
+      </a>
      </div>
      <!-- /.contacts__icon -->
      <div class="contacts__icon">
       <img src="img/contacts/mail.svg" alt="mail" class="contacts__image">
-      <p class="contacts__icon__text">senpai.makeyev@gmail.com</p>
+      <a href="mailto:senpai.makeyev@gmail.com" class="contacts__icon__text">senpai.makeyev@gmail.com</a>
      </div>
      <!-- /.contacts__icon -->
     </div>
     <!-- /.contacts__icons -->
+    <div class="modal">
     <form action="#" class="contacts__form">
      <div class="input__group">
       <input type="text" class="contacts__input--small" placeholder="Ваше имя">
@@ -200,12 +199,15 @@
      <div class="input__group">
       <input type="email" class="contacts__input--middle" placeholder="Ваш email">
      </div>
+     <button class="contacts__button">Отправить</button>
     </form>
     <!-- /.contacts__form -->
    </div>
+  </div>
    <!-- /.container -->
   </section>
   <!-- /.section section__contacts -->
  </main>
+ <script src="js/main.js"></script>
 </body>
 </html>

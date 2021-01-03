@@ -8,10 +8,8 @@
   align-items: center
  &__title
   margin: 0
-  font-size: 2rem
+  font-size: 3rem
   text-transform: uppercase
- &__text
-  font-size: 1rem
  &__icons
   display: flex
   justify-content: space-between
@@ -19,6 +17,8 @@
   max-width: 70%
   margin: auto
   margin-top: 4rem
+ &__text
+  font-size: 1.5rem
  &__icon
   display: flex
   flex-direction: column
@@ -27,12 +27,28 @@
   &__text
    font-size: 1.2rem
    padding-top: 0.5rem
+   outline: none
+   text-decoration: none
+   color: $light
  &__form
   display: flex
   justify-content: space-between
-  max-width: 35.6rem
+  max-width: 43rem
   margin: auto
   margin-top: 3rem
+ &__button
+  font-family: 'Futura Demi', cursive
+  padding: 0 3rem
+  border-radius: 9px
+  text-align: center
+  font-weight: 600
+  color: #524f4e
+  background: white
+  &:hover
+   color: $dark
+   padding: 1rem
+   box-shadow: 0 8px 15px rgba(0,0,0,.1)
+   transition: .7s
  &__input
   &--full
    height: 14rem
