@@ -115,6 +115,7 @@ input {
     max-width: 30rem;
     max-height: 28rem; }
     .services__row__text {
+      font-size: 1rem;
       text-align: center;
       margin: 1rem 1rem; }
     .services__row__title {
