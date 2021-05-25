@@ -10,4 +10,6 @@ $(document).ready(function () {
  });
 
  closeBtn.addEventListener('click', switchModal);
+
+ new WOW().init();
 });
