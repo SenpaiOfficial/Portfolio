@@ -13,7 +13,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 .container {
   width: 85%;
   max-width: 1403px;
@@ -393,7 +392,6 @@ input:focus {
   margin-top: 121px;
   margin-left: 3rem;
 }
-
 .works__heading {
   position: relative;
   display: -webkit-box;
