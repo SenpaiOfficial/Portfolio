@@ -317,7 +317,7 @@ button {
   transition: 0.5s; }
 
 .contacts {
-  background: url(../img/contacts/contacts-bg.jpg) no-repeat center/cover;
+  background: url("../img/contacts/contacts1.jpg") no-repeat center/cover;
   color: #ffffff; }
   .contacts__heading {
     display: flex;
@@ -327,7 +327,8 @@ button {
   .contacts__title {
     margin: 0;
     font-size: 3rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #212121; }
   .contacts__icons {
     display: flex;
     justify-content: space-between;
@@ -336,7 +337,8 @@ button {
     margin: auto;
     margin-top: 4rem; }
   .contacts__text {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1.5px #212121; }
   .contacts__icon {
     display: flex;
     flex-direction: column;
@@ -347,7 +349,11 @@ button {
       padding-top: 0.5rem;
       outline: none;
       text-decoration: none;
-      color: #ffffff; }
+      color: #ffffff;
+      text-shadow: 2px 2px 2px #212121; }
+  .contacts__image {
+    width: 9rem;
+    height: 9rem; }
   .contacts__form {
     display: flex;
     justify-content: space-between;
